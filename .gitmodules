@@ -1,0 +1,33 @@
+[submodule "antivirus-service"]
+	path = antivirus-service
+	url = git@github.com:bitstored/antivirus-service.git
+[submodule "auth-service"]
+	path = auth-service
+	url = git@github.com:bitstored/auth-service.git
+[submodule "compression-service"]
+	path = compression-service
+	url = git@github.com:bitstored/compression-service.git
+[submodule "crypto-service"]
+	path = crypto-service
+	url = git@github.com:bitstored/crypto-service.git
+[submodule "file-service"]
+	path = file-service
+	url = git@github.com:bitstored/file-service.git
+[submodule "logging-service"]
+	path = logging-service
+	url = git@github.com:bitstored/logging-service.git
+[submodule "search-service"]
+	path = search-service
+	url = git@github.com:bitstored/search-service.git
+[submodule "user-service"]
+	path = user-service
+	url = git@github.com:bitstored/user-service.git
+[submodule "watermarking-service"]
+	path = watermarking-service
+	url = git@github.com:bitstored/watermarking-service.git
+[submodule "cqrs"]
+	path = cqrs
+	url = git@github.com:bitstored/cqrs.git
+[submodule "repository"]
+	path = repository
+	url = git@github.com:bitstored/repository.git
