@@ -1,3 +1,4 @@
+mongod &
 cd auth-service
 go run cmd/auth-service/main.go &
 cd ../compression-service
@@ -10,3 +11,6 @@ cd ../user-service
 go run cmd/user-service/main.go &
 cd ../watermarking-service
 go run cmd/watermarking-service/main.go &
+cd pkg/watermarking/server
+source bits_vm
+python server.py
