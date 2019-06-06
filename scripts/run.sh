@@ -8,7 +8,7 @@ go run cmd/crypto-service/main.go &
 cd ../file-service
 go run cmd/file-service/main.go &
 cd ../user-service
-go run cmd/user-service/main.go &
+go run cmd/user-service/main.go  cmd/user-service/handlers.go&
 cd ../watermarking-service
 go run cmd/watermarking-service/main.go &
 cd pkg/watermarking/server
