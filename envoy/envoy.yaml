@@ -43,9 +43,9 @@ static_resources:
         keepalive_time: 300
     lb_policy: round_robin
     hosts: [{ socket_address: { address: host.docker.internal, port_value: 4008 }}]
-  # - name: file_service
-  #   connect_timeout: 0.25s
-  #   type: logical_dns
-  #   http2_protocol_options: {}
-  #   lb_policy: round_robin
-  #   hosts: [{ socket_address: { address: 127.0.0.1, port_value: 5005 }}]
+  - name: file_service
+    connect_timeout: 0.25s
+    type: logical_dns
+    http2_protocol_options: {}
+    lb_policy: round_robin
+    hosts: [{ socket_address: { address: 127.0.0.1, port_value: 4005 }}]
