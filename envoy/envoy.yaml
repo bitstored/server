@@ -20,8 +20,10 @@ static_resources:
             - name: local_service
               domains: ["*"]
               routes:
-              - match: { prefix: "/" }
+              - match: { prefix: "/account_service" }
                 route: { cluster: user_service, max_grpc_timeout: 0s }
+              - match: { prefix: "/file_service" }
+                route: { cluster: file_service, max_grpc_timeout: 0s }
               cors:
                 allow_origin: ["*"]
                 allow_methods: GET, PUT, DELETE, POST, OPTIONS
@@ -48,4 +50,4 @@ static_resources:
     type: logical_dns
     http2_protocol_options: {}
     lb_policy: round_robin
-    hosts: [{ socket_address: { address: 127.0.0.1, port_value: 4005 }}]
+    hosts: [{ socket_address: { address: host.docker.internal, port_value: 4005 }}]
